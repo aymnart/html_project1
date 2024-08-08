@@ -17,16 +17,17 @@ nav{
 }
 nav * {
     margin: 10px;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
+    border: 2px solid transparent;
+    border-radius: 20px;
     padding: 9.27px 15px;
     height: max-content;
     text-decoration: none;
-    background-color: #8b8b8b23;
+    background-color: #46464674;
 
 }
 nav *:hover {
-    background-color: #6c0f9a9a;
+    border: 2px solid whitesmoke;
+    background-color: #B9212D;
     color: whitesmoke;
 }
 main{
@@ -39,7 +40,7 @@ section{
     display: flex;
     justify-content:center;
     align-items: center;
-
+    height: 100vh;
 
 }
 video{
@@ -87,11 +88,12 @@ h1{
     grid-template-columns: 1fr 1fr;
     font-size: large;
     align-items: center;
-
-    color: #06050F;
-    background-color: whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #c32e39;
     width: 90%;
 }
+
 #resume{
     padding: 10px 30px;
     position: relative;
@@ -102,8 +104,14 @@ h1{
     font-size: large; 
 }
 table *{
-    border: white 1px solid;
+    border: whitesmoke 1px solid;
+    border-radius: 5px;
     padding: 5px;
+    text-align: center;
+}
+tr *{
+    padding: 10px;
+
 }
 p{
     text-wrap: pretty;
@@ -115,4 +123,19 @@ form{
 }
 fieldset *{
     margin: 5px;
+}
+audio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: 10px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,0.3fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 200px;
+    width: 100%;
+    background-color: #c32e39;
 }
